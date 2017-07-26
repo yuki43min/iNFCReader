@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		635AF3601F281F0B0080AE83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AF35F1F281F0B0080AE83 /* AppDelegate.swift */; };
-		635AF3621F281F0B0080AE83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AF3611F281F0B0080AE83 /* ViewController.swift */; };
+		635AF3621F281F0B0080AE83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AF3611F281F0B0080AE83 /* MainViewController.swift */; };
 		635AF3651F281F0B0080AE83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635AF3631F281F0B0080AE83 /* Main.storyboard */; };
 		635AF3671F281F0B0080AE83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 635AF3661F281F0B0080AE83 /* Assets.xcassets */; };
 		635AF36A1F281F0B0080AE83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635AF3681F281F0B0080AE83 /* LaunchScreen.storyboard */; };
 		635AF3751F281F0B0080AE83 /* iNFCReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AF3741F281F0B0080AE83 /* iNFCReaderTests.swift */; };
 		635AF3801F281F0B0080AE83 /* iNFCReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635AF37F1F281F0B0080AE83 /* iNFCReaderUITests.swift */; };
+		637162EA1F282C0F008DB1BA /* IBCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637162E91F282C0F008DB1BA /* IBCustomButton.swift */; };
+		637162EC1F283891008DB1BA /* NFCReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637162EB1F283891008DB1BA /* NFCReaderViewController.swift */; };
+		637162F11F2839F5008DB1BA /* NFCData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637162F01F2839F5008DB1BA /* NFCData.swift */; };
+		63EFF06C1F2843040002C3A0 /* 1160_nfc_logo.eps in Resources */ = {isa = PBXBuildFile; fileRef = 63EFF06B1F2843040002C3A0 /* 1160_nfc_logo.eps */; };
+		63EFF06E1F2844E10002C3A0 /* NFC-logo-forum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63EFF06D1F2844E10002C3A0 /* NFC-logo-forum.jpg */; };
+		63EFF0701F285DA50002C3A0 /* define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFF06F1F285DA50002C3A0 /* define.swift */; };
+		63EFF0721F2862D00002C3A0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFF0711F2862D00002C3A0 /* BaseViewController.swift */; };
+		63EFF0741F28684C0002C3A0 /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFF0731F28684B0002C3A0 /* ViewControllerHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,7 @@
 /* Begin PBXFileReference section */
 		635AF35C1F281F0B0080AE83 /* iNFCReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iNFCReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		635AF35F1F281F0B0080AE83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		635AF3611F281F0B0080AE83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		635AF3611F281F0B0080AE83 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		635AF3641F281F0B0080AE83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		635AF3661F281F0B0080AE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		635AF3691F281F0B0080AE83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,15 @@
 		635AF37B1F281F0B0080AE83 /* iNFCReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iNFCReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		635AF37F1F281F0B0080AE83 /* iNFCReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNFCReaderUITests.swift; sourceTree = "<group>"; };
 		635AF3811F281F0B0080AE83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635AF38D1F28209A0080AE83 /* iNFCReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iNFCReader.entitlements; sourceTree = "<group>"; };
+		637162E91F282C0F008DB1BA /* IBCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBCustomButton.swift; sourceTree = "<group>"; };
+		637162EB1F283891008DB1BA /* NFCReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReaderViewController.swift; sourceTree = "<group>"; };
+		637162F01F2839F5008DB1BA /* NFCData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCData.swift; sourceTree = "<group>"; };
+		63EFF06B1F2843040002C3A0 /* 1160_nfc_logo.eps */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1160_nfc_logo.eps; path = ../../../../../../Downloads/1160_nfc_logo/1160_nfc_logo.eps; sourceTree = "<group>"; };
+		63EFF06D1F2844E10002C3A0 /* NFC-logo-forum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "NFC-logo-forum.jpg"; path = "../../../../../../Downloads/NFC-logo-forum.jpg"; sourceTree = "<group>"; };
+		63EFF06F1F285DA50002C3A0 /* define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = define.swift; sourceTree = "<group>"; };
+		63EFF0711F2862D00002C3A0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		63EFF0731F28684B0002C3A0 /* ViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +114,17 @@
 		635AF35E1F281F0B0080AE83 /* iNFCReader */ = {
 			isa = PBXGroup;
 			children = (
+				63EFF0751F2868520002C3A0 /* Common */,
+				637162EF1F2839DC008DB1BA /* Data */,
+				637162EE1F2839AF008DB1BA /* Views */,
+				637162ED1F283972008DB1BA /* ViewControllers */,
+				635AF38D1F28209A0080AE83 /* iNFCReader.entitlements */,
 				635AF35F1F281F0B0080AE83 /* AppDelegate.swift */,
-				635AF3611F281F0B0080AE83 /* ViewController.swift */,
 				635AF3631F281F0B0080AE83 /* Main.storyboard */,
-				635AF3661F281F0B0080AE83 /* Assets.xcassets */,
 				635AF3681F281F0B0080AE83 /* LaunchScreen.storyboard */,
 				635AF36B1F281F0B0080AE83 /* Info.plist */,
+				63EFF06A1F2842E50002C3A0 /* Resources */,
+				635AF3661F281F0B0080AE83 /* Assets.xcassets */,
 			);
 			path = iNFCReader;
 			sourceTree = "<group>";
@@ -123,6 +145,50 @@
 				635AF3811F281F0B0080AE83 /* Info.plist */,
 			);
 			path = iNFCReaderUITests;
+			sourceTree = "<group>";
+		};
+		637162ED1F283972008DB1BA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				63EFF0711F2862D00002C3A0 /* BaseViewController.swift */,
+				635AF3611F281F0B0080AE83 /* MainViewController.swift */,
+				637162EB1F283891008DB1BA /* NFCReaderViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		637162EE1F2839AF008DB1BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				637162E91F282C0F008DB1BA /* IBCustomButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		637162EF1F2839DC008DB1BA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				637162F01F2839F5008DB1BA /* NFCData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		63EFF06A1F2842E50002C3A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63EFF06D1F2844E10002C3A0 /* NFC-logo-forum.jpg */,
+				63EFF06B1F2843040002C3A0 /* 1160_nfc_logo.eps */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63EFF0751F2868520002C3A0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				63EFF06F1F285DA50002C3A0 /* define.swift */,
+				63EFF0731F28684B0002C3A0 /* ViewControllerHelper.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +259,11 @@
 				TargetAttributes = {
 					635AF35B1F281F0B0080AE83 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
 					};
 					635AF36F1F281F0B0080AE83 = {
 						CreatedOnToolsVersion = 9.0;
@@ -230,6 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				635AF36A1F281F0B0080AE83 /* LaunchScreen.storyboard in Resources */,
+				63EFF06C1F2843040002C3A0 /* 1160_nfc_logo.eps in Resources */,
+				63EFF06E1F2844E10002C3A0 /* NFC-logo-forum.jpg in Resources */,
 				635AF3671F281F0B0080AE83 /* Assets.xcassets in Resources */,
 				635AF3651F281F0B0080AE83 /* Main.storyboard in Resources */,
 			);
@@ -256,8 +329,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				635AF3621F281F0B0080AE83 /* ViewController.swift in Sources */,
+				635AF3621F281F0B0080AE83 /* MainViewController.swift in Sources */,
+				637162EC1F283891008DB1BA /* NFCReaderViewController.swift in Sources */,
+				63EFF0701F285DA50002C3A0 /* define.swift in Sources */,
 				635AF3601F281F0B0080AE83 /* AppDelegate.swift in Sources */,
+				63EFF0741F28684C0002C3A0 /* ViewControllerHelper.swift in Sources */,
+				637162EA1F282C0F008DB1BA /* IBCustomButton.swift in Sources */,
+				63EFF0721F2862D00002C3A0 /* BaseViewController.swift in Sources */,
+				637162F11F2839F5008DB1BA /* NFCData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,8 +502,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iNFCReader/iNFCReader.entitlements;
 				DEVELOPMENT_TEAM = 56M2NUXPP2;
 				INFOPLIST_FILE = iNFCReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.fxat.iNFCReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,8 +518,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iNFCReader/iNFCReader.entitlements;
 				DEVELOPMENT_TEAM = 56M2NUXPP2;
 				INFOPLIST_FILE = iNFCReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.fxat.iNFCReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,6 +611,7 @@
 				635AF3861F281F0B0080AE83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		635AF3871F281F0B0080AE83 /* Build configuration list for PBXNativeTarget "iNFCReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +620,7 @@
 				635AF3891F281F0B0080AE83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		635AF38A1F281F0B0080AE83 /* Build configuration list for PBXNativeTarget "iNFCReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +629,7 @@
 				635AF38C1F281F0B0080AE83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
