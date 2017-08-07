@@ -23,7 +23,7 @@ class MainViewController: BaseViewController {
     self.buttonWriteStart.setTitle(kButtonWriteStartTitle, for: .normal)
     self.buttonWriteStart.addTarget(self, action: #selector(buttonWriteStartTapped), for: .touchUpInside)
     
-    self.imageView.image = UIImage(named: "NFC-logo-forum.jpg")!
+    self.imageView.image = UIImage(named: kNFCForumImage)!
     
   }
 
@@ -38,12 +38,12 @@ class MainViewController: BaseViewController {
       self.performSegue(withIdentifier: kSegueIdentifier, sender: self)
     } else {
       // iOS10以前の場合
-      ViewControllerHelper.showAlert(title: "エラー", message: "NFC機能はiOS11以降のみサポートされます。", vc: self)
+      ViewControllerHelper.showAlert(title: kAlertTitleError, message: kAlertMessageNotSupportedBeforeiOS11, vc: self)
     }
   }
   
   @objc func buttonWriteStartTapped (){
-    ViewControllerHelper.showAlert(title: "エラー", message: "本機能は実装されていません。", vc: self)    
+    ViewControllerHelper.showAlert(title: kAlertTitleError, message: kAlertMessageFunctionNotImplemented, vc: self)
   }
 
 }

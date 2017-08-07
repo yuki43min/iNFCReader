@@ -17,7 +17,6 @@
 		637162EA1F282C0F008DB1BA /* IBCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637162E91F282C0F008DB1BA /* IBCustomButton.swift */; };
 		637162EC1F283891008DB1BA /* NFCReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637162EB1F283891008DB1BA /* NFCReaderViewController.swift */; };
 		637162F11F2839F5008DB1BA /* NFCData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637162F01F2839F5008DB1BA /* NFCData.swift */; };
-		63EFF06C1F2843040002C3A0 /* 1160_nfc_logo.eps in Resources */ = {isa = PBXBuildFile; fileRef = 63EFF06B1F2843040002C3A0 /* 1160_nfc_logo.eps */; };
 		63EFF06E1F2844E10002C3A0 /* NFC-logo-forum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63EFF06D1F2844E10002C3A0 /* NFC-logo-forum.jpg */; };
 		63EFF0701F285DA50002C3A0 /* define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFF06F1F285DA50002C3A0 /* define.swift */; };
 		63EFF0721F2862D00002C3A0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFF0711F2862D00002C3A0 /* BaseViewController.swift */; };
@@ -59,6 +58,8 @@
 		637162E91F282C0F008DB1BA /* IBCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBCustomButton.swift; sourceTree = "<group>"; };
 		637162EB1F283891008DB1BA /* NFCReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReaderViewController.swift; sourceTree = "<group>"; };
 		637162F01F2839F5008DB1BA /* NFCData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCData.swift; sourceTree = "<group>"; };
+		63AEBB951F3823C100CE3044 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		63AEBB961F38240500CE3044 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		63EFF06B1F2843040002C3A0 /* 1160_nfc_logo.eps */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1160_nfc_logo.eps; path = ../../../../../../Downloads/1160_nfc_logo/1160_nfc_logo.eps; sourceTree = "<group>"; };
 		63EFF06D1F2844E10002C3A0 /* NFC-logo-forum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "NFC-logo-forum.jpg"; path = "../../../../../../Downloads/NFC-logo-forum.jpg"; sourceTree = "<group>"; };
 		63EFF06F1F285DA50002C3A0 /* define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = define.swift; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 				635AF3731F281F0B0080AE83 /* iNFCReaderTests */,
 				635AF37E1F281F0B0080AE83 /* iNFCReaderUITests */,
 				635AF35D1F281F0B0080AE83 /* Products */,
+				63AEBB941F3823C100CE3044 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +173,15 @@
 				637162F01F2839F5008DB1BA /* NFCData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		63AEBB941F3823C100CE3044 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63AEBB961F38240500CE3044 /* SceneKit.framework */,
+				63AEBB951F3823C100CE3044 /* CoreNFC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		63EFF06A1F2842E50002C3A0 /* Resources */ = {
@@ -301,7 +312,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				635AF36A1F281F0B0080AE83 /* LaunchScreen.storyboard in Resources */,
-				63EFF06C1F2843040002C3A0 /* 1160_nfc_logo.eps in Resources */,
 				63EFF06E1F2844E10002C3A0 /* NFC-logo-forum.jpg in Resources */,
 				635AF3671F281F0B0080AE83 /* Assets.xcassets in Resources */,
 				635AF3651F281F0B0080AE83 /* Main.storyboard in Resources */,
@@ -507,7 +517,7 @@
 				INFOPLIST_FILE = iNFCReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.fxat.iNFCReader;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.fxat.iNFCReader2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,7 +533,7 @@
 				INFOPLIST_FILE = iNFCReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.fxat.iNFCReader;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.fxat.iNFCReader2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

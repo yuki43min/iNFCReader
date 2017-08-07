@@ -39,7 +39,7 @@ class NFCReaderViewController : BaseViewController {
 @available(iOS 11.0, *)
 extension NFCReaderViewController: NFCNDEFReaderSessionDelegate {
   func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
-    // API Error
+    // CoreNFC API Error
     print(#function, error)
     
     DispatchQueue.main.async {
@@ -48,45 +48,28 @@ extension NFCReaderViewController: NFCNDEFReaderSessionDelegate {
   }
   
   func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-    // API Success
-    var results :Array<NFCData> = []
-    
+    // CoreNFC API Success
+    var results :Array<NFCData> = []    
     for message in messages {
       for record in message.records {
         let typeNameFormat = record.typeNameFormat
-        let type = String(data: record.type, encoding: .utf8)
-        let identifier = String(data: record.identifier, encoding: .utf8)
-        let payload = String(data: record.payload, encoding: .ascii)
+        let type = ViewControllerHelper.encodeToString(data: record.type)
+        let identifier = ViewControllerHelper.encodeToString(data: record.identifier)
+        let payload = ViewControllerHelper.encodeToString(data: record.payload)
         
-        let result = NFCData()
-
+        // log
         print("typeNameFormat: \(ViewControllerHelper.typeNameFormatToString(format :typeNameFormat))")
+        print("type: \(type!)")
+        print("identifier: \(identifier!)")
+        print("payload: \(payload!)")
+        
+        // set Data
+        let result = NFCData()
         result.typeNameformat = typeNameFormat
-
-        if(type != nil) {
-          print("type: \(type!)")
-          result.type = type!
-        } else {
-          print("type: nil")
-          result.type = ""
-        }
+        result.type = type!
+        result.identifier = identifier!
+        result.payload = payload!
         
-        if(identifier != nil) {
-          print("identifier: \(identifier!)")
-          result.identifier = identifier!
-        } else {
-          print("identifier: nil")
-          result.identifier = ""
-        }
-        
-        if(payload != nil) {
-          print("payload: \(payload!)")
-          result.payload = payload!
-        } else {
-          print("payload: nil")
-          result.payload = ""
-        }
-
         results.append(result)
       }
     }
@@ -108,5 +91,6 @@ extension NFCReaderViewController: NFCNDEFReaderSessionDelegate {
     self.textViewResult.text = ""
     sessionStart();
   }
+  
 }
 
