@@ -65,12 +65,12 @@ class ViewControllerHelper {
   static func encodeToString (data :Data) -> String! {
     let strUTF8 = String(data: data, encoding: .utf8)
     let strASCII = String(data: data, encoding: .ascii)
-    if(strASCII != nil) {
-      // ASCII
-      return strASCII!
-    } else if (strUTF8 != nil) {
+    if (strUTF8 != nil) {
       // UTF-8
       return strUTF8!
+    } else if(strASCII != nil) {
+      // ASCII
+      return strASCII!
     } else {
       // Others...
       return ""
