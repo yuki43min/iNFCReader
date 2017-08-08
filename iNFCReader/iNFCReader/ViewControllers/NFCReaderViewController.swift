@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreNFC
+import AudioToolbox
 
 @available(iOS 11.0, *)
 class NFCReaderViewController : BaseViewController {
@@ -49,6 +50,11 @@ extension NFCReaderViewController: NFCNDEFReaderSessionDelegate {
   
   func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
     // CoreNFC API Success
+    
+    // OK sound
+    AudioServicesPlaySystemSound(1002)
+    
+    // get Data
     var results :Array<NFCData> = []    
     for message in messages {
       for record in message.records {
