@@ -32,7 +32,7 @@ class MainViewController: BaseViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  @objc func buttonReadStartTapped (){
+  @objc func buttonReadStartTapped() {
     if #available(iOS 11.0, *) {
       // iOS11以降の場合
       self.performSegue(withIdentifier: kSegueIdentifier, sender: self)
@@ -42,7 +42,7 @@ class MainViewController: BaseViewController {
     }
   }
   
-  @objc func buttonWriteStartTapped (){
+  @objc func buttonWriteStartTapped() {
     ViewControllerHelper.showAlert(title: kAlertTitleError, message: kAlertMessageFunctionNotImplemented, vc: self)
   }
 
