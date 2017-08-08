@@ -60,8 +60,7 @@
 		637162F01F2839F5008DB1BA /* NFCData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCData.swift; sourceTree = "<group>"; };
 		63AEBB951F3823C100CE3044 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
 		63AEBB961F38240500CE3044 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
-		63EFF06B1F2843040002C3A0 /* 1160_nfc_logo.eps */ = {isa = PBXFileReference; lastKnownFileType = file; name = 1160_nfc_logo.eps; path = ../../../../../../Downloads/1160_nfc_logo/1160_nfc_logo.eps; sourceTree = "<group>"; };
-		63EFF06D1F2844E10002C3A0 /* NFC-logo-forum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "NFC-logo-forum.jpg"; path = "../../../../../../Downloads/NFC-logo-forum.jpg"; sourceTree = "<group>"; };
+		63EFF06D1F2844E10002C3A0 /* NFC-logo-forum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "NFC-logo-forum.jpg"; sourceTree = "<group>"; };
 		63EFF06F1F285DA50002C3A0 /* define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = define.swift; sourceTree = "<group>"; };
 		63EFF0711F2862D00002C3A0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		63EFF0731F28684B0002C3A0 /* ViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
@@ -188,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				63EFF06D1F2844E10002C3A0 /* NFC-logo-forum.jpg */,
-				63EFF06B1F2843040002C3A0 /* 1160_nfc_logo.eps */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
