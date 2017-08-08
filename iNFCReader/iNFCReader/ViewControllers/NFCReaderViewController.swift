@@ -90,6 +90,7 @@ extension NFCReaderViewController: NFCNDEFReaderSessionDelegate {
   
   func sessionStart() {
     self.session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: true)
+    self.session.alertMessage = kNFCSessionMessage
     self.session.begin()
   }
   

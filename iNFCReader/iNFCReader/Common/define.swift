@@ -27,6 +27,7 @@ let kButtonWriteStartTitle = "書き込みを開始"
 // NFCReaderViewController
 let klabelExplanationText = "NFCタグ読み込み結果："
 let kButtonRetryTitle = "もう一度読み込む"
+let kNFCSessionMessage = "この端末をXXXXにかざしてください。"
 
 // 画像リソース
 let kNFCForumImage = "NFC-logo-forum.jpg"
